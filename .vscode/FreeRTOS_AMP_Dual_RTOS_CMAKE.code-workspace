@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"cmake.options.statusBarVisibility": "visible",
+		"cmake.options.advanced": {
+			"ctest": {
+				"statusBarVisibility": "hidden",
+				"inheritDefault": "visible",
+				"projectStatusVisibility": "visible"
+			},
+			"workflow": {
+				"statusBarVisibility": "hidden",
+				"inheritDefault": "visible",
+				"projectStatusVisibility": "visible"
+			},
+			"cpack": {
+				"statusBarVisibility": "hidden",
+				"inheritDefault": "visible",
+				"projectStatusVisibility": "visible"
+			},
+		},
+		"cortex-debug.stm32cubeprogrammer": "${userHome}/project/Software/STM32CubeProgrammer/bin",
+		"cortex-debug.variableUseNaturalFormat": false
+	}
+}

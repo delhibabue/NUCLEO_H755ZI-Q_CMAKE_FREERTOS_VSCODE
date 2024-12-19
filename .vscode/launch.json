@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flash CM7",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${workspaceFolder}/build/CM7/STM32H755_FreeRTOS_CM7.elf",
+            "request": "launch",
+            "servertype": "stlink",
+            "device": "STM32H755ZITx",
+            "interface": "swd", // Or use your specific interface (jlink, etc.)
+            "serialNumber": "",
+            "runToEntryPoint": "main",
+            "v1": false,
+            "showDevDebugOutput": "both",
+            "svdFile": "${workspaceFolder}/STM32H755_CM7.svd",
+            "armToolchainPath": "/opt/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin",
+            "serverArgs": [
+                "-m",
+                "0"
+            ]
+        },
+        {
+            "name": "Flash CM4",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${workspaceFolder}/build/CM4/STM32H755_FreeRTOS_CM4.elf",
+            "request": "launch",
+            "servertype": "stlink",
+            "device": "STM32H755ZITx",
+            "interface": "swd", // Or use your specific interface (jlink, etc.)
+            "serialNumber": "",
+            "runToEntryPoint": "main",
+            "v1": false,
+            "showDevDebugOutput": "both",
+            "svdFile": "${workspaceFolder}/STM32H755_CM7.svd",
+            "armToolchainPath": "/opt/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin",
+            "serverArgs": [
+                "-m",
+                "0"
+            ],
+        }
+    ]
+}
